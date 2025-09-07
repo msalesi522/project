@@ -15,10 +15,20 @@ class PostController extends Controller
 {
 
     public function index(){
+
         $posts = Post::all();
 //       return view('posts.index',compact('posts'));
     return response()->json($posts,200);
     }
+
+
+    
+
+
+
+
+
+
 
     public function single(Post $post){
 //        return view('posts.single',compact('post'));
